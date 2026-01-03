@@ -42,6 +42,30 @@ a {
   color: #202bd6;
 }
 
+.mobile-hidden {
+  display: block;
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+}
+
+.mobile-hidden-inline {
+  display: inline-block;
+
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+}
+
+.mobile-display {
+  display: none;
+
+  @media screen and (max-width: 600px) {
+    display: block;
+  }
+}
+
 .bold {
   font-weight: 900;
   color: #171717;
@@ -114,4 +138,8 @@ a {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
+}
+
+.education__details {
+  margin-top: -10px;
 }
